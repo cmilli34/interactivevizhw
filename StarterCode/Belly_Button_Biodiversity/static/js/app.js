@@ -79,12 +79,8 @@ function buildMetadata(sample) {
       var pie_value = data.sample_values.slice(0,10);
       var pie_label = data.otu_ids.slice(0,10);
       var pie_hover= data.otu_labels.slice(0,10);
-  
-      console.log(pie_value);
-      console.log(pie_label);
-      console.log(pie_hover);
-  
-    var pie_data = [{
+
+      var pie_data = [{
       value: pie_value,
       labels: pie_label,
       text: pie_hover,
